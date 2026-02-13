@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<FindBugsFilter>
+    <!-- placeholder to exclude generated or legacy warnings -->
+</FindBugsFilter>

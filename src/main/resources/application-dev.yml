@@ -1,0 +1,23 @@
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:postgresql://dev-db:5432/databridge_dev
+    username: devuser
+    password: devpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+aws:
+  region: us-east-1
+  endpoint: https://aws
+
+logging:
+  level:
+    root: INFO

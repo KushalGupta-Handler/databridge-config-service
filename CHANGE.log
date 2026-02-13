@@ -1,0 +1,21 @@
+----commit 1---
+
+Project Contains:
+1) Docker compose file for local postgres setup.
+2) Basic project structure with folders for models, controllers, and entities
+3) Docker file for building the application container.
+4) added config for checkstyle, sonar and spot bugs (but plugins are not added yet)
+5) Added basic dependencies for Spring Boot, JPA, and PostgreSQL in the build file
+6) Created a sample entity and repository for testing the database connection.
+7) Added a README file with instructions on how to set up and run the project locally.
+8) Added  centralize error handling mechanism using @ControllerAdvice and @ExceptionHandler annotations.
+
+
+Pending Tasks:
+1) Implement the actual business logic and features of the application.
+2) Add unit tests and integration tests for the implemented features.
+3) Configure and integrate the code quality tools (checkstyle, sonar, spot bugs) into the build process.
+4) Set up CI/CD pipelines for automated testing and deployment.
+5) Add documentation for the API endpoints and usage of the application.
+6) AWS integration with localstack for testing and development purposes.
+7) Implement error handling and logging mechanisms for better debugging and monitoring.

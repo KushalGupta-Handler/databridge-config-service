@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/databridge
+    username: databridge
+    password: changeMe
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+# Common application properties
+app:
+  name: databridge-config-service
+
+logging:
+  level:
+    root: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" # placeholder format
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+# AWS LocalStack placeholders
+aws:
+  region: us-east-1
+  endpoint: http://localhost:4566
+  accessKey: test
+  secretKey: test

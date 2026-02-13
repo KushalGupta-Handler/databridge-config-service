@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/databridge_local
+    username: dbuser
+    password: dbpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+# Local overrides (developer machine)
+aws:
+  endpoint: http://localhost:4566
+  region: us-east-1
+
+logging:
+  level:
+    root: INFO
+  pattern:
+    console: "Local : %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" # placeholder format

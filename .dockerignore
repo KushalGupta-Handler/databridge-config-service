@@ -1,0 +1,8 @@
+target/
+*.log
+*.tmp
+*.pid
+/.mvn/wrapper/maven-wrapper.jar
+/.idea
+*.iml
+
